@@ -12,8 +12,8 @@
         public class Employee
         {
             public int EmployeeID { get; set; }
-            public string EmployeeFirstName { get; set; }
-            public string EmployeeLastName { get; set; }
+            public string? EmployeeFirstName { get; set; }
+            public string? EmployeeLastName { get; set; }
             public int Age { get; set; }
         }
 
@@ -26,29 +26,6 @@
         IList<Employee> employeeList;
         IList<Salary> salaryList;
 
-        public class Employee2
-        {
-            public int Id;
-            public string Name;
-            public int DepartmentId;
-        }
-
-        public class Department
-        {
-            public int Id;
-            public string DepartmentName;
-        }
-        public class Salary2
-        {
-            public int EmployeeId { get; set; }
-            public decimal Amount { get; set; }
-            public SalaryType Type { get; set; }
-        }
-        public enum SalaryType2
-        {
-            Monthly,
-            Performance
-        }
         public Program()
         {
             employeeList = new List<Employee>() {
